@@ -11,21 +11,27 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           Container(
+            
+            
             margin: EdgeInsets.only(left: 10,right: 10),
             height: MediaQuery.of(context).size.height / 15,
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
-              color: Colors.red,
+              
+              
            
               borderRadius: BorderRadius.circular(5),
               
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Search food or restaurent here..."),
-                Icon(Icons.search),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Search food or restaurent here..."),
+                  Icon(Icons.search),
+                ],
+              ),
             ),
           ),
         ],
